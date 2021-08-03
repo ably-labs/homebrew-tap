@@ -5,29 +5,29 @@
 class Ablyd < Formula
   desc "AblyD wraps around any program and makes its stdin and stdout available via a Pub/Sub system, Ably."
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "http://github.com/ably-labs/ablyd/releases/v0.2.0/AblyD_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "24a231602b28b1f4711fefb517bf45758cee3091b50fcaeb1fc710a85c1fd42a"
+      url "http://github.com/ably-labs/ablyd/releases/download/v0.2.1/AblyD_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "1cb460b292f4db2013b735ab98410597d52218c79fafb8fb71f3058585eec4fd"
     end
     if Hardware::CPU.arm?
-      url "http://github.com/ably-labs/ablyd/releases/v0.2.0/AblyD_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "cc5fc603e676e40eb3317940fcad77008989d9c6ac02197f590e05debe78fa99"
+      url "http://github.com/ably-labs/ablyd/releases/download/v0.2.1/AblyD_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "7977672f1b4c094b2652707214694529b7fb0a13055054b2dcc2192194e53aef"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "http://github.com/ably-labs/ablyd/releases/v0.2.0/AblyD_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "b0830746092ca078b5bcf3fb3b374420e5353b53d42095503c8ce62f8800e6e7"
+      url "http://github.com/ably-labs/ablyd/releases/download/v0.2.1/AblyD_0.2.1_Linux_x86_64.tar.gz"
+      sha256 "e2f9acde8aad42e9e8b93c9f7a044fb2afbe38775968efdc16e73db395c6db9d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/ably-labs/ablyd/releases/v0.2.0/AblyD_0.2.0_Linux_arm64.tar.gz"
-      sha256 "04c3f0e32878039fefb0997aa2a12a6d931b0e2591a17f1f8e92cd2093885b3a"
+      url "http://github.com/ably-labs/ablyd/releases/download/v0.2.1/AblyD_0.2.1_Linux_arm64.tar.gz"
+      sha256 "832556d861e3fa5e83a0fae138a2fd9062053e9d9e0655b9135ad0009eaa95fa"
     end
   end
 
